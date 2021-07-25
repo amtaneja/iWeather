@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <title>iWeather</title>
+  </head>
+  <body>
+    <div class="container-fluid mt-1">
+      <h1 class="display-3 fw-bolder lh-base" id='heading'>iWeather</h1>
+      <p class="lead mb-4" id="sub-heading">We are Providing you daily weather updates.</p>
+      <img src="images/weather.svg" class="img-thumbnail img-fluid w-25 mt-2 mb-4" alt="...">
+      <div class="form-floating w-25">
+        <input
+          type="email"
+          class="form-control"
+          id="floatingInput"
+          placeholder="name@example.com"
+        />
+        <label for="floatingInput">Enter the City Name</label>
+      </div>
+      
+    
+      <div
+        class="card position-absolute top-50 start-50 translate-middle"
+        style="width: 19rem"
+        id='card'
+      >
+        <div id='weather-img' class="p-2"></div>
+        <div class="card-body weather-head">
+          <h5 class="temperature fs-1 fw-bolder" id="temp"></h5>
+          <p class="card-text fw-normal" id='city'></p>
+          <p class="card-text" id='date'></p>
+        </div>
+        <ul class="list-group list-group-flush" id='list'>
+          <li class="list-group-item" id='min'></li>
+          <li class="list-group-item" id='sky'></li>
+          <li class="list-group-item" id='humidity'></li>
+        </ul>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+  <footer>Copyright © 2021 Aman Taneja All rights reserved.</footer>
+</html>
